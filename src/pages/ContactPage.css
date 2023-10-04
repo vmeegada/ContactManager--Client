@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+#logoContainer {
+    background-color: #CEF3FF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 231px;
+    height: 100%;
+}
+
+.logo {
+    font-family: Titillium Web;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align:center;
+    margin-top:30px;
+    color: #0884FF;
+ } 
+ .dasdashboard .totalContacts
+ {
+   display:flex;
+   text-align:center;
+   margin-left:30px;
+   margin-top: 40px;
+
+ }
+ 
+.logoBottom {
+    height: 27px;
+    width: 100px;
+    margin-left: 36px;
+    margin-bottom: 50px;
+    display: flex;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#contacts {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+#contactsContainer {
+    border-top: 2px solid #EAEAEA;
+    padding: 15px;
+}
+
+#contactsContainer >.button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+.contactsButtons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contactsButtons > .leftBtns {
+    display: flex;
+    gap: 10px;
+}
+
+.contactsButtons > .rightBtns {
+    display: flex;
+    gap: 5px;
+}
+
+#importBtn {
+    display:none;
+}
