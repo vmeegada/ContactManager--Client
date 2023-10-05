@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import "../page.css";
@@ -17,6 +17,10 @@ const Login = () => {
     const url = "http://localhost:8081/login";
     const history = useNavigate();
 
+    useEffect(() => {
+        sessionStorage.clear();
+    },[])
+
     function submit(e) {
         e.preventDefault();
         axios
@@ -30,7 +34,7 @@ const Login = () => {
                     alert("user haven't Registered");
                 } else if (res.data.message === "Valid" ) {
                     alert("login successful")
-                    // sessionStorage.setItem('email', email)
+                    sessionStorage.setItem('email',data.email)
                     history("/Home", { state: { id: data } });
                 }
             })
