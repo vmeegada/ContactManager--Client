@@ -1,9 +1,0 @@
-#contactList > table{
-    width: 100%;
-}
-
-th > div{
-    display: flex;
-    justify-content: flex-start;
-}
-

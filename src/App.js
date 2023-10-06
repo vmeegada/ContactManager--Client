@@ -4,6 +4,9 @@ import SignUp from './pages/Signup';
 import  Home from "./pages/Home"
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import Nomatch from "./components/Nomatch";
+
+
  
 
 
@@ -15,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login user={user} setUser={setUser} setUserContacts={setUserContacts}/>} />
         <Route path="Signup" element={<SignUp />} />
-        <Route path="/Home" element={<Home userId={user} setUser={setUser} userContacts={userContacts} />} />
+        <Route path="/Home" element={<Home userId={user} setUser={setUser} userContacts={userContacts} />}/>
+        <Route path="*" element={<Nomatch/>}></Route>
       </Routes>
     </div>
   );

@@ -1,7 +1,7 @@
 
 section{
   
-    background-image:url("./Image/Login.png") ;
+    background-image:url("../Image/Login.png") ;
     height: 100dvh;
     background-repeat: no-repeat;
     width: 100%;
@@ -93,10 +93,15 @@ letter-spacing: 0.25px;
 word-wrap: break-word;
 border:2px solid #7D8CC4;
 width:85%; 
- 
+padding-left: 170px;
  }
  .link
  {
     margin-top: 100px;
     margin-left: 200px;
  }
+
+ /* <Route path="/Home" element={<Home userId={user} setUser={setUser} userContacts={userContacts} />} >
+          <Route path="contact" element={<Totalcontacts/>}></Route>
+          </Route> */
+       
